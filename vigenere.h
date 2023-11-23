@@ -23,7 +23,8 @@ class Vigenere {
     std::string key;            
 
     public:
-    /*! Creates a new Vigenere cipher object.
+    //! Creates a new Vigenere cipher object.
+    /*!
     * @param key A std::string representing the key to be used for encrypting and decrypting within
     * the Vigenere cipher object.
     */
@@ -32,20 +33,23 @@ class Vigenere {
     //! Descructor for the Vigenere cipher object.
     ~Vigenere();               
 
-    /*! Encrypts a provided string with the Vigenere cipher using the set key.
+    //! Encrypts a provided string with the Vigenere cipher using the set key.
+    /*!
     * @param msg A std::string corresponding to the message to be encrypted using the cipher key.
     * @return Returns the encrypted string.
     */
     std::string encrypt(std::string msg);
 
-    /*! Decrypts a provided string with the Vigenere cipher using the set key.
+    //! Decrypts a provided string with the Vigenere cipher using the set key.
+    /*!
     * @param msg A std::string corresponding to the message to the already 
     * encrypted message to be decrypted using the inputted cipher key.
     * @return Returns the decrypted string.
     */
     std::string decrypt(std::string msg);
 
-    /*! Boolean to check if an encrypted string is encrypted correctly using the Vigenere cipher.
+    //! Boolean to check if an encrypted string is encrypted correctly using the Vigenere cipher.
+    /*!
     * @param encryptedMsg A std::string holding an encrypted string.
     * @param decryptedMsg A std::string holding the original unencrypted string.
     * @return Returns true if the encrypted string would match the original decryptedMsg when decrypted. Returns
@@ -53,7 +57,8 @@ class Vigenere {
     */
     bool isEncrypted(std::string encryptedMsg, std::string decryptedMsg);
 
-    /*! Sets the key to the cipher to a different string keyword.
+    //! Sets the key to the cipher to a different string keyword.
+    /*!
     * @param key A std::string holding a specified key to be stored as the Vigenere cipher key.
     */
     void setKey(std::string key);
